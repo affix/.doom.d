@@ -4,6 +4,7 @@
 
 (unless window-system
   (require 'mouse)
+(setq mac-fn-modifier 'meta)
   (xterm-mouse-mode t)
   (global-set-key [mouse-4] (lambda ()
                               (interactive)
@@ -24,3 +25,5 @@
 (require 'all-the-icons)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
+
+(setq doom-theme 'doom-spacegrey)
